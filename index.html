@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>singlepage_scroll_fixedmenu</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    
+	<div class="container-fluid">
+
+    		<div class="navbar-header">
+        			<a class="navbar-brand" href="#">My Website !</a>
+            		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            			<span class="icon-bar"></span>
+               			<span class="icon-bar"></span>
+                		<span class="icon-bar"></span>
+					</button>  
+       		 </div>
+        
+        	<div class="collapse navbar-collapse" id="myNavbar">
+      			<ul class="nav navbar-nav navbar-right">
+        			<li><a href="#">Home</a></li>
+            		<li><a href="#page1">Page1</a></li>
+            		<li><a href="#page2">page2</a></li>
+            		<li><a href=".jumbotron">Contact</a></li>
+				</ul>            
+    		</div>
+
+	</div>
+</nav>
+
+<div id="page1"><strong>This is a page one !</strong></div>
+<div id="page2"><strong>this is a page two !</strong></div>
+
+
+	
+    	
+		<div class="jumbotron">
+        <h2 align="center">Contact</h2>
+        	<form role="form">
+            	<div class="form-group">
+                	<div class="col-xs-6">
+                	<label class="sr-only" for="name">Name/Organization</label>
+                	<input type="text" placeholder="Name/Organization" class="form-control input-lg">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                	<div class="col-xs-6">
+                	<label class="sr-only" for="email">Email</label>
+                	<input type="text" placeholder="Email" class="form-control input-lg">
+                    </div>
+                </div>
+                
+                 <div class="form-group">
+                 	<div class="col-xs-12">
+                 	<label for="comment"><br>
+                 	  Your Message</label>
+                	<textarea class="form-control" rows="10" id="comment"></textarea><br>
+                    </div>
+                </div>
+                
+             	<div class="text-center">
+                <button type="submit" class="btn btn-default btn-lg" style="text-align:center">Send a Message</button>
+                </div>
+                
+            </form>
+</div>
+
+          
+<script type="text/javascript">
+
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});
+
+</script>
+</body>
+</html>

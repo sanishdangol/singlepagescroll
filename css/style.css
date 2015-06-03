@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+#page1{
+	background-color:#99F;
+	height:650px;
+	padding:100px;
+	text-align:center;
+	}
+	
+#page2{
+	background-color:#963;
+	height:650px;
+	padding:100px;
+	text-align:center;
+	}
+
+#contact{
+	background-color:#F00;
+	height:650px;
+	padding:100px;
+	text-align:center;
+	}
+	
+	
+	
+
